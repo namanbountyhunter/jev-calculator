@@ -1,7 +1,10 @@
 import re
 
+
 def extract_numbers(query):
-    numbers = re.findall(r"-?\d+(?:\.\d+)?", query)
+    # Extract numbers without treating the subtraction operator
+    # as part of the second number.
+    numbers = re.findall(r"\d+(?:\.\d+)?", query)
 
     numbers = [float(n) for n in numbers]
 
