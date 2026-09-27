@@ -12,7 +12,7 @@ app = FastAPI(title="Jev Calculator")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
-                   "https://jev-calculator.vercel.app"],
+                   "https://jev-calculator-rouge.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
